@@ -1,4 +1,4 @@
-> 我并不想在本机安装docker engine, 所以采用其它VM来安装。在在本地IDEA开发中使用远程的docker engine.
+> 我并不想在本机安装docker engine, 所以采用其它VM来安装。在本地IDEA开发中使用远程的docker engine.
 
 
 ## How to setup a Remote Docker Engine
@@ -26,8 +26,8 @@ ExecStart=/usr/bin/dockerd -H fd:// -H tcp://0.0.0.0:12375  -H unix:///var/run/d
 ![image](./images/docker_builder_setting_1.png)
 2. config docker builder, `Run Built images` 最好不选，只创建image
 ![image](./images/docker_builder_setting_2.png)
-3. run docker builder to build image
+3. run docker builder to build image<br>
 ![image](./images/docker_builder_setting_3.png)
-4. after created image, we can create container base on it.
+4. after created image, we can create container base on it.<br>
 ![image](./images/create_container_1.png)
 ![image](./images/create_container_2.png)
