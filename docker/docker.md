@@ -64,7 +64,7 @@ $  sudo /usr/sbin/sysctl --system
 Docker 不是虚拟机，容器中的应用都应该以前台执行，而不是像虚拟机、物理机里面那样，用 upstart/systemd 去启动后台服务，容器内没有后台服务的概念
 
 #### 3. Dockerfile 调试
-![image](https://media.oss.navercorp.com/user/6184/files/521e2f90-69a8-11e9-9044-d575fa0a4ed8)
+![image](./images/docker_debug.png)
 > 如图所示，可以运行如下命令看之前step的状态：
 > docker run --it d1e884d5ed14
 
