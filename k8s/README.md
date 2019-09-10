@@ -16,7 +16,7 @@ refer to:
 - `Cluster`: 是计算，存储和网络资源的集合，K8S利用这些资源运行各种基于容器的应用。
 - `Master`: 是cluster的大脑，主要职责是调度。即决定将应用放在哪里运行。Master同时也是一个node.
 - `Node`：职责是运行应用，Node由master管理，Node负责监控并汇报容器的状态，同时根据master的要求管理容器的生命周期。
-- `Pod`: **是k8s的最小工作单元。**Pod可以包含一个或多个容器，Pod中的容器作为一个整体被master调度到一个node上运行。Pod中所有的容器是共享数据卷和使用同一个网络namespace, 即相同的IP地址和Port空间。它们可以直接用localhost通信。
+- `Pod`: **是k8s的最小工作单元**. Pod可以包含一个或多个容器，Pod中的容器作为一个整体被master调度到一个node上运行。Pod中所有的容器是共享数据卷和使用同一个网络namespace, 即相同的IP地址和Port空间。它们可以直接用localhost通信。
 
 - `Controller`: k8s是通过controller来管理pod的，controller中定义了pod的部署特性，比如几个副本，在什么样的node上运行。
 - `Service`:每个POD有自己的IP，且很可能会被频繁销毁重启，IP会变化。所以外界通过service来访问一组特定的POD， service有自己的IP和端口，且为Pod提供了负载均衡。
