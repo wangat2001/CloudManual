@@ -39,4 +39,4 @@ refer: https://docs.docker.com/config/containers/resource_constraints/
 ```
 Docker 在镜像的设计中，引入了层（layer）的概念。也就是说，用户制作镜像的每一步操作，都会生成一个层，也就是一个增量 rootfs。 用到的技术就是联合文件系统（Union File System）
 
-![image](./image/unionfs.png)
+![image](./images/unionfs.png)
