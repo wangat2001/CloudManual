@@ -17,4 +17,4 @@ ExecStart=/usr/bin/dockerd -g /home/myname/apps/docker -H fd:// -H tcp://0.0.0.0
 
 - sudo systemctl daemon-reload   # 重新加载配置
 - sudo systemctl restart docker    # 重启docker
-- doker info  # 查看Docker Root Dir的值是否为: /home/myname/apps/docker 
+- docker info  # 查看Docker Root Dir的值是否为: /home/myname/apps/docker 
